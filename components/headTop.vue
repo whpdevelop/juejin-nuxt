@@ -5,7 +5,7 @@
              <img src="https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg" alt="">
          </h1>
          <ul>
-             <li><nuxt-link to="/welcome">首页</nuxt-link></li>
+             <li><nuxt-link to="/welcome/frontend">首页</nuxt-link></li>
              <li><nuxt-link to="/pins">沸点</nuxt-link></li>
              <li><nuxt-link to="/books">小册</nuxt-link></li>
              <li><nuxt-link to="/repos">开源库</nuxt-link></li>
@@ -33,9 +33,12 @@ export default {
 
 <style lang="scss">
 #headTop {
+  width: 100%;
   height: 60px;
   padding-top: 11px;
   background-color: #fff;
+  position: fixed;
+  top: 0;
   .main {
     display: flex;
     justify-content: space-between;

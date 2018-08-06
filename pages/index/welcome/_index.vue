@@ -11,10 +11,10 @@
          <span>{{item.user.username}}</span>
          <span class="poit"></span>
          <span>3小时前</span>
-         <span class="poit"></span>
-         <!-- <span>{{item.tags[0].title}}</span> -->
+         <!-- <span class="poit"></span> -->
+         <span v-if="item.tags.title">{{item.tags[0].title}}</span>
        </p>
-       <!-- <h3>{{item.title}}</h3> -->
+       <h3>{{item.title}}</h3>
        <p>
          <span class="el-icon el-icon-star-on">{{item.user.followersCount}}</span>
          <span class="el-icon el-icon-star-off">{{item.user.followeesCount}}</span>
@@ -29,30 +29,13 @@
 </template>
 
 <script>
-import { getIndexMoudelData } from "../../../service";
 export default {
+  props: ["datas"],
   data() {
-    return {
-      datas: []
-    };
+    return {};
   },
-  created() {
-    getIndexMoudelData("web", 20).then(res => {
-      console.log(res);
-      this.datas = res.data.d;
-    });
-  },
-  asyncData(context) {
-    // 根据不同的路由 发送请求传参 获取响应的数据
-    console.log(context.params.index);
-    console.log(context);
-
-    // getIndexMoudelData(context.params.index).then(res => {
-    //   return {
-    //     datas: res.data.d
-    //   };
-    // });
-  },
+  created() {},
+  mounted() {},
   methods: {},
   components: {}
 };

@@ -10,6 +10,11 @@ export default {
   data() {
     return {};
   },
+  head() {
+    return {
+      title: "登录"
+    };
+  },
   components: {}
 };
 </script>

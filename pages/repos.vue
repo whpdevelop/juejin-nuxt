@@ -9,6 +9,11 @@ export default {
   data() {
     return {};
   },
+  head() {
+    return {
+      title: "开源库"
+    };
+  },
   components: {}
 };
 </script>

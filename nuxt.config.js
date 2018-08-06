@@ -52,11 +52,11 @@ module.exports = {
     // prefix: '/api/',
     proxy: true
   },
-  proxy: {
-    '/api/': {
-      target: 'https://timeline-merger-ms.juejin.im',
-      pathRewrite: { '^/api/': '' }
-    }
-  }
+  // proxy: {
+  //   '/api/': {
+  //     target: 'https://timeline-merger-ms.juejin.im',
+  //     pathRewrite: { '^/api/': '' }
+  //   }
+  // }
 }
 

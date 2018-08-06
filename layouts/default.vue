@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="default">
     <!-- 首页头部 -->
     <head-top></head-top>
     <nuxt class="w" />
@@ -14,6 +14,9 @@ export default {
 };
 </script>
 <style>
+#default {
+  padding-top: 70px;
+}
 /* html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
